@@ -8,15 +8,13 @@ export ZSH=/home/$USER/.oh-my-zsh
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="blinks"
-# ZSH_THEME="steeef"
 ZSH_THEME="bullet-train"
 
 BULLETTRAIN_PROMPT_ORDER=(
   dir
   git
   time
-)
-
+  )
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -52,7 +50,7 @@ export UPDATE_ZSH_DAYS=7
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-HIST_STAMPS="dd.mm.yyyy"
+HIST_STAMPS="yyyy.mm.dd"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -78,7 +76,7 @@ else
 fi
 
 # Compilation flags
-export ARCHFLAGS="-arch x86_64"
+# export ARCHFLAGS="-arch x86_64"
 
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
@@ -91,6 +89,10 @@ export ARCHFLAGS="-arch x86_64"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias cdl='f() { cd $1; ls -halt };f'
+
+
+
 # source $HOME/.bash_aliases
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
