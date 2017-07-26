@@ -10,6 +10,15 @@ export ZSH=/home/$USER/.oh-my-zsh
 # ZSH_THEME="blinks"
 ZSH_THEME="bullet-train"
 
+# ZSH_THEME="powerlevel9k/powerlevel9k"
+POWERLEVEL9K_COLOR_SCHEME='light'
+POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+POWERLEVEL9K_VCS_FOREGROUND='045'
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(public_ip dir rbenv vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time)
+
+
+
 BULLETTRAIN_PROMPT_ORDER=(
   dir
   git
