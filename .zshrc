@@ -9,6 +9,7 @@ export ZSH=/home/$USER/.oh-my-zsh
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="blinks"
 ZSH_THEME="bullet-train"
+BULLETTRAIN_PROMPT_ORDER=( dir git time )
 
 # ZSH_THEME="powerlevel9k/powerlevel9k"
 POWERLEVEL9K_COLOR_SCHEME='light'
@@ -18,12 +19,6 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(public_ip dir rbenv vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time)
 
 
-
-BULLETTRAIN_PROMPT_ORDER=(
-  dir
-  git
-  time
-  )
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -68,7 +63,7 @@ HIST_STAMPS="yyyy.mm.dd"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=( autojump command-not-found common-aliases cp docker git git-extras github python sudo thefuck web-search yum )
+plugins=( autojump command-not-found common-aliases cp docker git git-extras github python sudo web-search yum )
 
 source $ZSH/oh-my-zsh.sh
 
@@ -100,8 +95,4 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias cdl='f() { cd $1; ls -halt };f'
 
-
-
-# source $HOME/.bash_aliases
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+# export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
