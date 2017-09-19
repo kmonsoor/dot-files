@@ -94,5 +94,7 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias cdl='f() { cd $1; ls -halt };f'
+alias sai='sudo apt-get install'
+alias dk=docker
 
 # export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
