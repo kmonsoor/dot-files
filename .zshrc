@@ -8,10 +8,11 @@ export ZSH=/home/$USER/.oh-my-zsh
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="blinks"
-ZSH_THEME="bullet-train"
-BULLETTRAIN_PROMPT_ORDER=( dir git time )
 
-# ZSH_THEME="powerlevel9k/powerlevel9k"
+# ZSH_THEME="bullet-train"
+# BULLETTRAIN_PROMPT_ORDER=( dir git time )
+
+ZSH_THEME="powerlevel9k/powerlevel9k"
 POWERLEVEL9K_COLOR_SCHEME='light'
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 POWERLEVEL9K_VCS_FOREGROUND='045'
@@ -96,5 +97,14 @@ fi
 alias cdl='f() { cd $1; ls -halt };f'
 alias sai='sudo apt-get install'
 alias dk=docker
+alias dkc=docker-compose
+alias scl='screen -ls'
+alias scr='screen -r'
 
 # export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/ubuntu/google-cloud-sdk/path.zsh.inc' ]; then source '/home/ubuntu/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/ubuntu/google-cloud-sdk/completion.zsh.inc' ]; then source '/home/ubuntu/google-cloud-sdk/completion.zsh.inc'; fi
