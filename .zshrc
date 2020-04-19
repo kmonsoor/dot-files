@@ -2,6 +2,8 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
+# Mac
+# export ZSH=/Users/$USER/.oh-my-zsh
 export ZSH=/home/$USER/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
@@ -9,15 +11,15 @@ export ZSH=/home/$USER/.oh-my-zsh
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="blinks"
 
-# ZSH_THEME="bullet-train"
-# BULLETTRAIN_PROMPT_ORDER=( dir git time )
+ZSH_THEME="bullet-train"
+BULLETTRAIN_PROMPT_ORDER=( dir git time )
 
-ZSH_THEME="powerlevel9k/powerlevel9k"
-POWERLEVEL9K_COLOR_SCHEME='light'
-POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-POWERLEVEL9K_VCS_FOREGROUND='045'
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(public_ip dir rbenv vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time)
+# ZSH_THEME="powerlevel9k/powerlevel9k"
+# POWERLEVEL9K_COLOR_SCHEME='light'
+# POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+# POWERLEVEL9K_VCS_FOREGROUND='045'
+# POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir rbenv vcs)
+# POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time)
 
 
 # Uncomment the following line to use case-sensitive completion.
@@ -29,8 +31,6 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs histor
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
 # DISABLE_AUTO_UPDATE="true"
-
-DISABLE_UPDATE_PROMPT=true
 
 # Uncomment the following line to change how often to auto-update (in days).
 export UPDATE_ZSH_DAYS=7
@@ -45,7 +45,7 @@ export UPDATE_ZSH_DAYS=7
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -55,7 +55,7 @@ export UPDATE_ZSH_DAYS=7
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-HIST_STAMPS="yyyy.mm.dd"
+HIST_STAMPS="yyyy-mm-dd"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -92,12 +92,13 @@ fi
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
+alias zconf="vim ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias cdl='f() { cd $1; ls -halt };f'
 alias sai='sudo apt-get install'
-alias dk=docker
-alias dkc=docker-compose
+# alias bi='brew install'
+# alias dk=docker
+# alias dkc=docker-compose
 alias scl='screen -ls'
 alias scr='screen -r'
 
