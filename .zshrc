@@ -101,6 +101,7 @@ alias sai='sudo apt-get install'
 # alias dkc=docker-compose
 alias scl='screen -ls'
 alias scr='screen -r'
+alias v=vim
 
 # export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
