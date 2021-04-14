@@ -14,11 +14,11 @@ export ZSH=/home/$USER/.oh-my-zsh
 ZSH_THEME="bullet-train"
 BULLETTRAIN_PROMPT_ORDER=( dir git time )
 
-# ZSH_THEME="powerlevel9k/powerlevel9k"
+# ZSH_THEME="powerlevel10k/powerlevel10k"
 # POWERLEVEL9K_COLOR_SCHEME='light'
 # POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 # POWERLEVEL9K_VCS_FOREGROUND='045'
-# POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir rbenv vcs)
+# POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir context public_ip rbenv vcs)
 # POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time)
 
 
@@ -64,7 +64,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=( command-not-found common-aliases cp docker git git-extras github python sudo web-search yum fast-syntax-highlighting z)
+plugins=( command-not-found common-aliases cp docker git git-extras github python sudo ubuntu z fast-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
