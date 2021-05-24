@@ -11,15 +11,19 @@ export ZSH=/home/$USER/.oh-my-zsh
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="blinks"
 
-ZSH_THEME="bullet-train"
-BULLETTRAIN_PROMPT_ORDER=( dir git time )
+# To use one of the Oh-my-zsh's default themes, please uncomment and modify the below two lines, 
+# and comment out the `powerlevel10k` section below
+# ZSH_THEME="bullet-train"
+# BULLETTRAIN_PROMPT_ORDER=( dir git time )
 
-# ZSH_THEME="powerlevel10k/powerlevel10k"
-# POWERLEVEL9K_COLOR_SCHEME='light'
-# POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-# POWERLEVEL9K_VCS_FOREGROUND='045'
-# POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir context public_ip rbenv vcs)
-# POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time)
+# To use the immediately section below, install Zsh theme `powerlevel10k` from  https://github.com/romkatv/powerlevel10k
+# Otherwise, comment this section and uncomment the above one.
+ZSH_THEME="powerlevel10k/powerlevel10k"
+POWERLEVEL9K_COLOR_SCHEME='light'
+POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+POWERLEVEL9K_VCS_FOREGROUND='045'
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir context public_ip rbenv vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time)
 
 
 # Uncomment the following line to use case-sensitive completion.
